@@ -1,32 +1,57 @@
-# React + TypeScript + Vite
+# 🌍 ThreatMap
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A real-time cyber threat intelligence dashboard that visualizes live attacks on an interactive world map.
 
-Currently, two official plugins are available:
+Built by [CodeWithSamzy](https://github.com/CodeWithSamzy)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌍 Interactive dark world map with live attack visualizations
+- ⚡ Real-time threat feed updating every 2 seconds
+- 🔴 Animated pulse markers by severity (critical/high/medium/low)
+- 📊 Live stats — attack types, severity breakdown, top source countries
+- 🗂️ Filter threats by type or severity
+- 🎯 Click any threat to inspect full details on the map
+- 📱 Fully mobile responsive
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠 Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- React + TypeScript
+- Vite
+- Leaflet.js + React-Leaflet (interactive maps)
+- CartoDB Dark Matter tiles
+- Lucide React (icons)
+- Custom threat simulation engine
+
+---
+
+## 🚀 Getting Started
+
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Open `http://localhost:5173`
+
+---
+
+## 🔐 Security Note
+
+ThreatMap uses a simulated threat feed for demonstration purposes. The data generator models real-world attack patterns including severity distributions weighted toward low/medium threats with rare critical events — mimicking actual threat intelligence feeds.
+
+---
+
+## 📸 Screenshots
+
+> Coming soon
+
+---
+
+## 📄 License
+
+MIT © [CodeWithSamzy](https://github.com/CodeWithSamzy)
